@@ -92,11 +92,11 @@ Reading has loads of advantages. Firstly, you get to pick your own pace. Secondl
 * [NHK Easy News](https://www3.nhk.or.jp/news/easy/): Simplified news at N3(-ish) level.  
 (Note that all the resources above (besides the manga) are free!)
 
-Recommendations for all levels at https://teamjapanese.com/free-websites-japanese-reading-practice-every-level/
+Recommendations for all levels [here](https://teamjapanese.com/free-websites-japanese-reading-practice-every-level/)
 
 ### Listening
 
 You can get listening practice through Youtube, Netflix, Twitch, and many other places. There are also podcasts out there that you can give a go. Some of our recommendations are:
 
-* ひいきびいき: A podcast that ended a while ago but has over 200 episodes with all sorts of topics.(Can be hard to find these days) 
+* ひいきびいき: A podcast that ended a while ago but has over 200 episodes with all sorts of topics. (Can be hard to find these days) 
 * [Muggles' Giggles](http://mugglesgiggles.com/wordpress/): If you're at all into Harry Potter and translation, give this one a go. 2 bilingual people go through the Japanese HP and talk about what they think of the translation. 
