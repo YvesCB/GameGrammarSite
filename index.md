@@ -2,23 +2,23 @@
 
 ## How to get started
 
-It can be overwhelming when you get started so here's our recommendation of how to get started:
+It can be overwhelming when you get started so here's our recommendations:
 
 ### 1: Learn the Kana
 
-The first thing you should do is to learn the Japanese syllabaries aka the Kana. This includes Hiragana and Katakana but not Kanji. It will be very important to know the Kana right from the start since many resources online (GameGrammar included) will often assume you know at least Kana. More info bellow.
+The first thing you should do is to learn the Japanese syllabaries aka the Kana. This includes Hiragana and Katakana but not Kanji. It will be very important to know the Kana right from the start since many resources online (GameGrammar included) will often assume you know at least Kana. More info below.
 
 ### 2: Learn grammar
 
-Grammar is the foundation on which the language is built. Learning basic grammar can be an extremely powerful tool when you first try to wrap your head around how a language works. You may feel some resistance since it sounds boring to learn about grammar but we encourage you to do it. It can be very rewarding to learn grammar and thereby understand the system behind the language. Don't worry if you feel overwhelmed at first and feel free to ask whenever you have questions. More info bellow. 
+Grammar is the foundation on which the language is built. Learning basic grammar can be an extremely powerful tool when you first try to wrap your head around how a language works. You may feel some resistance since it sounds boring to learn about grammar but we encourage you to do it. It can be very rewarding to learn grammar and thereby understand the system behind the language. Don't worry if you feel overwhelmed at first and feel free to ask whenever you have questions. More info below. 
 
 ### 3: Learn vocab
 
-This should of course be started in tandem with point 2 since learning only grammar and no vocab to use the grammar with can feel a bit vacuous. If grammar is the foundation then vocab are the building blocks with which you build the house. To be comfortable understanding any language you need to learn a few thousand words. This may seem like a tall order but, you can do it! More info bellow.
+This should of course be started in tandem with point 2 since learning only grammar and no vocab to use the grammar with can feel a bit vacuous. If grammar is the foundation then vocab are the building blocks with which you build the house. To be comfortable understanding any language you need to learn a few thousand words. This may seem like a tall order but, you can do it! More info below.
 
 ### 4: Reading/Listening
 
-You should get into the habit of getting a lot of input. This can be done in the form of listening or reading. You need to fill your brain with enough information about the language before you'll be able to reproduce it. More info More info bellow.
+You should get into the habit of getting a lot of input. This can be done in the form of listening or reading. You need to fill your brain with enough information about the language before you'll be able to reproduce it. More info More info below.
 
 ## Kana
 
