@@ -2,25 +2,27 @@
 
 ## How to get started
 
-It can be overwhelming when you get started so here's our recommendation of how to get started (Use tags mentioned in #bot_spam):
+It can be overwhelming when you get started so here's our recommendation of how to get started:
 
 ### 1: Learn the Kana
 
-The first thing you should do is to learn the Japanese syllabaries aka the Kana. This includes Hiragana and Katakana but not Kanji. It will be very important to know the Kana right from the start since many resources online (GameGrammar included) will often assume you know at least Kana. More info [here](##Kana).
+The first thing you should do is to learn the Japanese syllabaries aka the Kana. This includes Hiragana and Katakana but not Kanji. It will be very important to know the Kana right from the start since many resources online (GameGrammar included) will often assume you know at least Kana. More info bellow.
 
 ### 2: Learn grammar
 
-Grammar is the foundation on which the language is built. Learning basic grammar can be an extremely powerful tool when you first try to wrap your head around how a language works. You may feel some resistance since it sounds boring to learn about grammar but we encourage you to do it. It can be very rewarding to learn grammar and thereby understand the system behind the language. Don't worry if you feel overwhelmed at first and feel free to ask whenever you have questions. More info [here](##Grammar). 
+Grammar is the foundation on which the language is built. Learning basic grammar can be an extremely powerful tool when you first try to wrap your head around how a language works. You may feel some resistance since it sounds boring to learn about grammar but we encourage you to do it. It can be very rewarding to learn grammar and thereby understand the system behind the language. Don't worry if you feel overwhelmed at first and feel free to ask whenever you have questions. More info bellow. 
 
 ### 3: Learn vocab
 
-This should of course be started in tandem with point 2 since learning only grammar and no vocab to use the grammar with can feel a bit vacuous. If grammar is the foundation then vocab are the building blocks with which you build the house. To be comfortable understanding any language you need to learn a few thousand words. This may seem like a tall order but, you can do it! More info [here](##Vocab).
+This should of course be started in tandem with point 2 since learning only grammar and no vocab to use the grammar with can feel a bit vacuous. If grammar is the foundation then vocab are the building blocks with which you build the house. To be comfortable understanding any language you need to learn a few thousand words. This may seem like a tall order but, you can do it! More info bellow.
 
 ### 4: Reading/Listening
 
-You should get into the habit of getting a lot of input. This can be done in the form of listening or reading. You need to fill your brain with enough information about the language before you'll be able to reproduce it. More info [here](##Input).
+You should get into the habit of getting a lot of input. This can be done in the form of listening or reading. You need to fill your brain with enough information about the language before you'll be able to reproduce it. More info More info bellow.
 
 ## Kana
+
+![Kana](https://img.ulule.com/display/9e40fdb005be589aeabeac9ce2290dc6ec76b0f9/thumbnail/640x360/presales/3/0/2/76203/kana_posters_640x360.eUx8BoAz3Y8m.png)
 
 Japanese is mainly written using 3 different writing systems. **Hiragana**, **Katakana** and **Kanji**. Since Kanji is a big topic by itself, we'll just focus on the Kana, which means Hiragana and Katakana. 
 
@@ -37,6 +39,8 @@ There are also Tofugu articles for each set. [Hiragana](https://www.tofugu.com/j
 Test your skills [here](https://kana.pro/).
 
 ## Grammar
+
+![Grammar](https://tinasworlds.files.wordpress.com/2019/06/english-grammar.jpg)
 
 Grammar can seem dauting at first but it's not all that bad. Luckily a lot of kind people are providing free grammar resources online. You're on the server of a few of them actually. With that said, GameGrammar has its very own series about grammar called Japanese101 and you can check it out on YouTube [here](https://www.youtube.com/watch?v=smwe35H6w7A).
 
@@ -56,6 +60,8 @@ A slightly newer grammar reference that is still being added to. What sets it ap
 
 ## Vocab
 
+![Vocab](https://www.englishclub.com/images/vocabulary/vocabulary.jpg)
+
 Learning vocab is a very long process but luckily an easy one. These days there's tons of apps to help you with it. Most of them use a process called SRS (Spaced Repetition System) where flashcards will be shown to you at specific intervals which are determined by how well you knew the card. The most famous such program is [Anki](https://apps.ankiweb.net/).
 It's also available for Android and iOS (though the iOS version isn't free). 
 
@@ -71,6 +77,8 @@ We also have these lists for the games we play on stream:
 You can download these and import them into Anki if you want to.
 
 ## Input
+
+![Input](https://i.ytimg.com/vi/J_EQDtpYSNM/maxresdefault.jpg)
 
 Getting input is very important. It's the way you train your brain to understand the language and eventually to reproduce what  you've heard/seen. What's important is that you have to understand at least some of what you listen to or read. You don't have to understand it immediately but rather, if you can make sense of about 75% through the use of dictionaries and google, then you'll be able to get very good practice out of a reading or listening material. What you use is basically up to you, as long as you do it regularly and it is somewhat appropriate for your level. 
 
