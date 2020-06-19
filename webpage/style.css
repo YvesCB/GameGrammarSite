@@ -35,6 +35,7 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    z-index: 1;
   }
   
   /* Style the navigation bar links */
@@ -64,6 +65,7 @@
   .row {  
     display: -ms-flexbox; /* IE10 */
     display: flex;
+    background-color: #252525;
   }
   
   /* Create two unequal columns that sits next to each other */
@@ -78,7 +80,7 @@
     align-self: flex-start;
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
+    top: 30px;
   }
   
   .side h3 {
