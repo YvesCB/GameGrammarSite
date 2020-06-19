@@ -35,7 +35,6 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index: 1;
   }
   
   /* Style the navigation bar links */
@@ -76,6 +75,10 @@
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 60px;
+    align-self: flex-start;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
   }
   
   .side h3 {
