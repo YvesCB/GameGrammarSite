@@ -58,6 +58,14 @@ An insanely extensive grammar reference. Written and updated by many different p
 
 A slightly newer grammar reference that is still being added to. What sets it apart is its use of illustrations to help explain concepts.
 
+### [Japanesetests4you](https://japanesetest4you.com/)
+
+A website that collects grammar points and vocab sorted by JLPT level. It also has little tests that you can take to see how you would on a JLPT scale.
+
+### [Nihongo no Mori 日本語の森](https://www.youtube.com/channel/UCVx6RFaEAg46xfAsD2zz16w)
+
+A Youtube channel that does long and in-depth videos about grammar points and vocab for higher JLPT levels. This is especially useful to you if you're learning for N3 or above.
+
 ## Vocab
 
 ![Vocab](https://www.englishclub.com/images/vocabulary/vocabulary.jpg)
