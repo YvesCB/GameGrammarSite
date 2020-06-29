@@ -17,9 +17,9 @@
 
   /* Header/logo Title */
   .header {
-    padding: 60px;
+    padding: 180px;
     text-align: center;
-    background: #123670;
+    background: url(images/banner.png) 50% 0% no-repeat;
     color: white;
   }
   
@@ -46,6 +46,7 @@
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    font-size: 16pt;
   }
   
   
@@ -81,6 +82,7 @@
     position: sticky;
     position: -webkit-sticky;
     top: 30px;
+    font-size: 14pt;
   }
   
   .side h3 {
@@ -140,6 +142,26 @@
       color: #e8e8e8;
   }
   
+  .YoutubeLink:before {
+    content: url(images/icons8-play-button-48.png);
+    position: relative;
+    top: 10px;
+    padding-right: 20px;
+  }
+
+  .TwitchLink:before {
+    content: url(images/icons8-twitch-48.png);
+    position: relative;
+    top: 10px;
+    padding-right: 20px;
+  }
+
+  .DiscordLink:before {
+    content: url(images/icons8-discord-new-logo-48.png);
+    position: relative;
+    top: 10px;
+    padding-right: 20px;
+  }
   
   /* Footer */
   .footer {
@@ -148,6 +170,7 @@
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     background-color: #f1f1f1;
+    font-size: large;
   }
 
   .footer a {
@@ -177,6 +200,10 @@
   @media screen and (max-width: 700px) {
     .row {   
       flex-direction: column;
+    }
+    .side {
+      width: 100%;
+      position: relative;
     }
   }
   
