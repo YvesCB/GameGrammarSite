@@ -162,6 +162,13 @@
     top: 10px;
     padding-right: 20px;
   }
+
+  .TwitterLink:before {
+    content: url(images/icons8-twitter-squared-48.png);
+    position: relative;
+    top: 10px;
+    padding-right: 20px;
+  }
   
   /* Footer */
   .footer {
