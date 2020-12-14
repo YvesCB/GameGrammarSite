@@ -6,6 +6,8 @@
 
 html {
   font-size: 62.5%;
+  max-width: 160vh;
+  margin: auto;
 }
 
 body {
@@ -51,17 +53,53 @@ header {
   justify-content: flex-end;
   justify-items: end;
 }
+.menu svg {
+  width: 3.5vh;
+  height: auto;
+}
+.menu svg:hover {
+  width: 4vh;
+  height: auto;
+  margin-left: -0.5vh;
+  transition: 0.2s;
+}
 nav {
   grid-area: navbar;
 }
 .nav-links {
   justify-content: space-around;
   list-style: none;
+  display: flex;
 }
 .nav-link {
   color: #5f5f79;
+  position: relative;
   text-decoration: none;
   font-size: 18px;
+}
+.nav-link::before {
+  content: "";
+  width: 0vh;
+  height: 3px;
+  background: rgb(44, 44, 44);
+  position: absolute;
+  top: 110%;
+  left: -50%;
+  transition: 0.5s;
+}
+.nav-link::after {
+  content: "";
+  width: 0vh;
+  height: 3px;
+  background: rgb(44, 44, 44);
+  position: absolute;
+  top: -20%;
+  left: -50%;
+  transition: 0.5s;
+}
+.nav-link:hover::before,
+.nav-link:hover::after {
+  width: 200%;
 }
 main {
   display: grid;
@@ -72,6 +110,32 @@ main {
 }
 .articles {
   grid-column: 1 / 2;
+  padding-right: 10vh;
+}
+.articles h2 {
+  font-size: 4.2rem;
+  margin: 3vh 0vh 3vh 0vh;
+}
+.articles h3 {
+  font-size: 2.8rem;
+  margin: 2vh 0vh 1vh 0vh;
+}
+.articles p {
+  font-size: 1.5rem;
+  margin: 1vh 0vh;
+}
+.articles a {
+  color: black;
+}
+.articles a:hover {
+  color: rgb(83, 83, 83);
+}
+.articles ul {
+  font-size: 1.5rem;
+  margin: 1vh 2vh;
+}
+.articles rt {
+  font-size: 0.9rem;
 }
 .side-bar {
   grid-column: 2 / 3;
@@ -83,12 +147,14 @@ main {
   margin: 1vh 0vh;
   text-align: center;
 }
-.articles h2 {
+.recommended-article h2,
+.recent-article h2 {
   padding-left: 1vh;
   font-weight: bold;
   text-decoration: underline;
 }
-.articles p {
+.recommended-article p,
+.recent-article p {
   outline: black solid 2px;
   padding: 15vh 0px;
   margin-top: 1vh;
