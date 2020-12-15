@@ -23,8 +23,8 @@
       <ul class="nav-links">
         <li><a class="nav-link" href="index.html">Home</a></li>
         <li><a class="nav-link" href="articles.html">Articles</a></li>
-        <li><a class="nav-link" href="#">Videos</a></li>
-        <li><a class="nav-link" href="#">About</a></li>
+        <li><a class="nav-link" href="videos.html">Videos</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
       </ul>
     </nav>
     <div class="menu">
@@ -54,14 +54,31 @@
       <div class="recent-yt">
         <h2>Recent Youtube video</h2>
         <div class="video-box">
-          <p>thumbnail here somehow</p>
+          <iframe class="sidebar-latestVideoEmbed" vnum='0' cid="UC8UqIZlupjIQ3vxcAOEoNug" frameborder="0" allowfullscreen></iframe>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+          <script>
+          var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+          function loadVideo(iframe) {
+            $.getJSON(reqURL + iframe.getAttribute('cid'),
+              function(data) {
+                var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
+                console.log(videoNumber);
+                var link = data.items[videoNumber].link;
+                id = link.substr(link.indexOf("=") + 1);
+                iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
+              }
+            );
+          }
+          var iframes = document.getElementsByClassName('sidebar-latestVideoEmbed');
+          for (var i = 0, len = iframes.length; i < len; i++) {
+            loadVideo(iframes[i]);
+          }
+          </script>
         </div>
       </div>
-      <div class="other-vid">
-        <h2>Other video</h2>
-        <div class="video-box">
-          <p>thumbnail here somehow</p>
-        </div>
+      <div>
+        <h2>Discord</h2>
+        <iframe class="discord-embed" src="https://discord.com/widget?id=285885482888593408&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
       </div>
     </section>
   </main>
@@ -69,8 +86,11 @@
   <footer>
     <p>Created 2020</p>
     <ul>
-      <li><a href="twitter.com/game_grammar">Twitter</a></li>
+      <li><a class="footer-twitter" href="https://twitter.com/game_grammar" target="_blank">Twitter</a></li>
+      <li><a class="footer-youtube" href="https://youtube.com/c/gamegrammar" target="_blank">YouTube</a></li>
+      <li><a class="footer-twitch" href="https://twitch.tv/gamegrammar" target="_blank">Twitch</a></li>
     </ul>
+    <p class="footer-comment">If there is an issue with the site, contact me on Discord or Twitter.</p>
   </footer>
 
 </body>

@@ -110,7 +110,7 @@ main {
   grid-template-columns: 4fr 1fr;
   width: 90%;
   margin: auto;
-  padding-top: 20px;
+  padding: 20px 0px;
 }
 .articles {
   grid-column: 1 / 2;
@@ -123,6 +123,10 @@ main {
 .articles h3 {
   font-size: 2.8rem;
   margin: 2vh 0vh 1vh 0vh;
+}
+.articles h4 {
+  font-size: 2.4rem;
+  margin: 0vh 0vh 1vh 0vh;
 }
 .articles p {
   font-size: 1.7rem;
@@ -141,15 +145,69 @@ main {
 .articles rt {
   font-size: 1rem;
 }
+
+.about-section .members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.member {
+  width: 45%;
+  padding: 2vh 0vh;
+}
+.member p {
+  font-size: 1.5rem;
+}
+.profile-pic {
+  float: left;
+  width: 15vh;
+  height: auto;
+  margin: 1vh;
+}
+.social-link {
+  text-decoration: none;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+.vid-embed {
+  width: 400px;
+  height: 220px;
+  float: left;
+  padding-right: 2vh;
+}
+.latestVideoEmbed {
+  width: 400px;
+  height: 220px;
+  float: left;
+  padding-right: 2vh;
+}
+.sidebar-latestVideoEmbed {
+  width: 100%;
+  height: 200px;
+}
+
+.recent-yt-videos {
+  width: 100%;
+  align-content: left;
+}
+.recent-yt-videos .latestVideoEmbed {
+  width: 650px;
+  height: 370px;
+  padding: 2vh 0vh;
+}
+
 .side-bar {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
 .video-box {
-  outline: black solid 2px;
-  padding: 10vh 0px;
-  margin: 1vh 0vh;
-  text-align: center;
+  align-content: left;
+  padding: 2vh 0vh;
+}
+.discord-embed {
+  padding: 2vh 0vh;
 }
 .recommended-article h2,
 .recent-article h2 {
@@ -168,8 +226,53 @@ main {
 
 footer {
   width: 90%;
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "top-left right"
+    "bottom-left right";
+  align-items: left;
   margin: auto;
-  padding: 5vh 0vh;
+  padding: 2vh;
   justify-content: space-between;
+  background: rgb(230, 230, 230);
+}
+footer ul {
+  list-style: none;
+  grid-area: right;
+}
+footer p {
+  grid-area: top-left;
+  font-size: 1.2rem;
+}
+footer a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  padding: 2vh 0px;
+}
+footer a:hover {
+  color: rgb(83, 83, 83);
+}
+.footer-twitter::before {
+  content: url(img/icons8-twitter.svg);
+  position: relative;
+  top: 7px;
+  padding: 5px;
+}
+.footer-youtube::before {
+  content: url(img/icons8-play-button.svg);
+  position: relative;
+  top: 7px;
+  padding: 5px;
+}
+.footer-twitch::before {
+  content: url(img/icons8-twitch.svg);
+  position: relative;
+  top: 7px;
+  padding: 5px;
+}
+.footer-comment {
+  grid-area: bottom-left;
+  padding: 20px 0px 0px 0px;
 }

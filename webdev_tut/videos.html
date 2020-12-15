@@ -9,7 +9,7 @@
   <link
 			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
 			rel="stylesheet"
-		/>
+    />
 </head>
 
 <body>
@@ -38,16 +38,33 @@
 
   <main>
     <section class="articles">
-      <a href="./articles/01starterguide.html">
-      <article class="recent-article">
-        <h2>Recent Article</h2>
-        <p>This will be the most recent article</p>
-        <img src="article_img" alt="">
-      </article>
-      </a>
-      <article class="recommended-article">
-        <h2>Recommended Article</h2>
-        <p>This will be the recommended article</p>
+      <article class="recent-yt-videos">
+        <h2>Check out our 5 most recent YouTube uploads!</h2>
+          <iframe class="latestVideoEmbed" vnum='0' cid="UC8UqIZlupjIQ3vxcAOEoNug" frameborder="0" allowfullscreen></iframe>
+          <iframe class="latestVideoEmbed" vnum='1' cid="UC8UqIZlupjIQ3vxcAOEoNug" frameborder="0" allowfullscreen></iframe>
+          <iframe class="latestVideoEmbed" vnum='2' cid="UC8UqIZlupjIQ3vxcAOEoNug" frameborder="0" allowfullscreen></iframe>
+          <iframe class="latestVideoEmbed" vnum='3' cid="UC8UqIZlupjIQ3vxcAOEoNug" frameborder="0" allowfullscreen></iframe>
+          <iframe class="latestVideoEmbed" vnum='4' cid="UC8UqIZlupjIQ3vxcAOEoNug" frameborder="0" allowfullscreen></iframe>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+          <script>
+          var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+          function loadVideo(iframe) {
+            $.getJSON(reqURL + iframe.getAttribute('cid'),
+              function(data) {
+                var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
+                console.log(videoNumber);
+                var link = data.items[videoNumber].link;
+                id = link.substr(link.indexOf("=") + 1);
+                iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
+              }
+            );
+          }
+          var iframes = document.getElementsByClassName('latestVideoEmbed');
+          for (var i = 0, len = iframes.length; i < len; i++) {
+            loadVideo(iframes[i]);
+          }
+          </script>
+        </div>
       </article>
     </section>
     <section class="side-bar">
@@ -92,7 +109,7 @@
     </ul>
     <p class="footer-comment">If there is an issue with the site, contact me on Discord or Twitter.</p>
   </footer>
-
+  
 </body>
 
 </html>
