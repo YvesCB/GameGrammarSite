@@ -75,13 +75,13 @@ nav {
   color: #5f5f79;
   position: relative;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 3rem;
 }
 .nav-link::before {
   content: "";
-  width: 0vh;
+  width: 0px;
   height: 3px;
-  background: rgb(44, 44, 44);
+  background: white;
   position: absolute;
   top: 110%;
   left: -50%;
@@ -89,9 +89,9 @@ nav {
 }
 .nav-link::after {
   content: "";
-  width: 0vh;
+  width: 0px;
   height: 3px;
-  background: rgb(44, 44, 44);
+  background: white;
   position: absolute;
   top: -20%;
   left: -50%;
@@ -100,6 +100,10 @@ nav {
 .nav-link:hover::before,
 .nav-link:hover::after {
   width: 200%;
+  background: rgb(44, 44, 44);
+}
+.nav-link:hover {
+  color: black;
 }
 main {
   display: grid;
@@ -121,7 +125,7 @@ main {
   margin: 2vh 0vh 1vh 0vh;
 }
 .articles p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 1vh 0vh;
 }
 .articles a {
@@ -131,11 +135,11 @@ main {
   color: rgb(83, 83, 83);
 }
 .articles ul {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 1vh 2vh;
 }
 .articles rt {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .side-bar {
   grid-column: 2 / 3;
