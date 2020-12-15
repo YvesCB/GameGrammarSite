@@ -16,8 +16,7 @@
 
   <header>
     <div class="logo-container">
-      <img src="/laptop-ui/img/logo.svg" alt="logo">
-      <h4 class="logo">GameGrammar</h4>
+      <img class="banner-img" src="img/banner.png" alt="logo">
     </div>
     <nav>
       <ul class="nav-links">
@@ -38,13 +37,15 @@
 
   <main>
     <section class="articles">
-      <a href="./articles/01starterguide.html">
-      <article class="recommended-article">
-        <img src="article_img" alt="">
+      <article>
         <h2>Start learning Japanese</h2>
-        <p>This will be the most recent article</p>
+        <a href="./articles/01starterguide.html">
+        <div class="img-box">
+          <img class="article-img" src="articles/01img/titleimg.png" alt="">
+        </div>
+        </a>
+        <h5>A guide to help you get started with learning Japaneses. It can be overwhelming at first, trying to learn a new language. That's why, this guide will give you some pointers about where to start and link to many useful and primarily free resources.</h5>
       </article>
-      </a>
     </section>
     <section class="side-bar">
       <div class="recent-yt">
@@ -61,7 +62,7 @@
                 console.log(videoNumber);
                 var link = data.items[videoNumber].link;
                 id = link.substr(link.indexOf("=") + 1);
-                iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
+                iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=0");
               }
             );
           }

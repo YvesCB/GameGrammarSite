@@ -6,12 +6,13 @@
 
 html {
   font-size: 62.5%;
-  max-width: 160vh;
+  max-width: 1820px;
   margin: auto;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 button {
   font-family: "Poppins", sans-serif;
@@ -23,7 +24,7 @@ header {
     "header header header"
     "navbar navbar menu";
   width: 90%;
-  height: 30vh;
+  height: 400px;
   margin: auto;
   align-items: center;
 }
@@ -35,10 +36,12 @@ header {
   flex: 1;
 }
 
+.banner-img {
+  position: absolute;
+}
 .logo-container {
   grid-area: header;
   height: 100%;
-  background-color: aquamarine;
   justify-items: center;
   justify-content: center;
 }
@@ -65,9 +68,10 @@ header {
 }
 nav {
   grid-area: navbar;
+  position: sticky;
 }
 .nav-links {
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   display: flex;
 }
@@ -75,7 +79,8 @@ nav {
   color: #5f5f79;
   position: relative;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 30pt;
+  margin: 0px 45px
 }
 .nav-link::before {
   content: "";
@@ -100,7 +105,7 @@ nav {
 .nav-link:hover::before,
 .nav-link:hover::after {
   width: 200%;
-  background: rgb(44, 44, 44);
+  background: #273471; 
 }
 .nav-link:hover {
   color: black;
@@ -110,23 +115,34 @@ main {
   grid-template-columns: 4fr 1fr;
   width: 90%;
   margin: auto;
+  background: white;
   padding: 20px 0px;
 }
 .articles {
   grid-column: 1 / 2;
   padding-right: 10vh;
 }
+.articles h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+  margin: 10px 0px 20px 0px;
+}
 .articles h2 {
   font-size: 4.2rem;
-  margin: 3vh 0vh 3vh 0vh;
+  margin: 30px 0px 10px 0px;
 }
 .articles h3 {
   font-size: 2.8rem;
-  margin: 2vh 0vh 1vh 0vh;
+  margin: 30px 0px 10px 0px;
 }
 .articles h4 {
   font-size: 2.4rem;
   margin: 0vh 0vh 1vh 0vh;
+}
+.articles h5 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin: 0px 0px 20px 0px;
 }
 .articles p {
   font-size: 1.7rem;
@@ -145,6 +161,19 @@ main {
 .articles rt {
   font-size: 1rem;
 }
+.img-box {
+  width: 90%;
+  overflow: hidden;
+  margin: 10px 0px;
+}
+.articles .article-img { 
+  width: 90%;
+  transition: transform .5s ease;
+}
+.articles .article-img:hover {
+  transform: scale(1.05);
+}
+
 
 .about-section .members {
   display: flex;
@@ -194,7 +223,7 @@ main {
 }
 .recent-yt-videos .latestVideoEmbed {
   width: 650px;
-  height: 370px;
+  height: 420px;
   padding: 2vh 0vh;
 }
 
@@ -202,26 +231,15 @@ main {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
+.side-bar h2 {
+  font-size: 1.8rem;
+}
 .video-box {
   align-content: left;
   padding: 2vh 0vh;
 }
 .discord-embed {
   padding: 2vh 0vh;
-}
-.recommended-article h2,
-.recent-article h2 {
-  padding-left: 1vh;
-  font-weight: bold;
-  text-decoration: underline;
-}
-.recommended-article p,
-.recent-article p {
-  outline: black solid 2px;
-  padding: 15vh 0px;
-  margin-top: 1vh;
-  text-align: center;
-  width: 90%;
 }
 
 footer {
@@ -233,7 +251,7 @@ footer {
     "bottom-left right";
   align-items: left;
   margin: auto;
-  padding: 2vh;
+  padding: 20px 20px 10px 20px;
   justify-content: space-between;
   background: rgb(230, 230, 230);
 }
@@ -241,15 +259,17 @@ footer ul {
   list-style: none;
   grid-area: right;
 }
+footer li {
+  padding: 5px 0px;
+}
 footer p {
   grid-area: top-left;
   font-size: 1.2rem;
 }
 footer a {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: black;
-  padding: 2vh 0px;
 }
 footer a:hover {
   color: rgb(83, 83, 83);
@@ -274,5 +294,5 @@ footer a:hover {
 }
 .footer-comment {
   grid-area: bottom-left;
-  padding: 20px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
 }

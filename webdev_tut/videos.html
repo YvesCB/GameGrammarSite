@@ -16,8 +16,7 @@
 
   <header>
     <div class="logo-container">
-      <img src="/laptop-ui/img/logo.svg" alt="logo">
-      <h4 class="logo">GameGrammar</h4>
+      <img class="banner-img" src="img/banner.png" alt="logo">
     </div>
     <nav>
       <ul class="nav-links">
@@ -55,7 +54,7 @@
                 console.log(videoNumber);
                 var link = data.items[videoNumber].link;
                 id = link.substr(link.indexOf("=") + 1);
-                iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
+                iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=0");
               }
             );
           }
@@ -82,7 +81,7 @@
                 console.log(videoNumber);
                 var link = data.items[videoNumber].link;
                 id = link.substr(link.indexOf("=") + 1);
-                iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
+                iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=0");
               }
             );
           }
