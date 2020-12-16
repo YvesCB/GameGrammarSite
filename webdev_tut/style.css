@@ -21,8 +21,8 @@ header {
   display: grid;
   grid-template-rows: 4fr 1fr;
   grid-template-areas:
-    "header header header"
-    "navbar navbar menu";
+    "header header"
+    "navbar navbar";
   width: 90%;
   height: 400px;
   margin: auto;
@@ -52,23 +52,23 @@ header {
   transform: translate(0px, 46%);
 }
 .menu {
+  display: none;
   grid-area: menu;
   justify-content: flex-end;
   justify-items: end;
 }
 .menu svg {
-  width: 3.5vh;
+  width: 35px;
   height: auto;
 }
 .menu svg:hover {
-  width: 4vh;
+  width: 45px;
   height: auto;
-  margin-left: -0.5vh;
+  margin-left: -10px;
   transition: 0.2s;
 }
 nav {
   grid-area: navbar;
-  position: sticky;
 }
 .nav-links {
   justify-content: space-between;
@@ -120,7 +120,7 @@ main {
 }
 .articles {
   grid-column: 1 / 2;
-  padding-right: 10vh;
+  padding-right: 100px;
 }
 .articles h1 {
   font-size: 5rem;
@@ -137,7 +137,7 @@ main {
 }
 .articles h4 {
   font-size: 2.4rem;
-  margin: 0vh 0vh 1vh 0vh;
+  margin: 0px 0px 10px 0px;
 }
 .articles h5 {
   font-size: 1.8rem;
@@ -146,7 +146,7 @@ main {
 }
 .articles p {
   font-size: 1.7rem;
-  margin: 1vh 0vh;
+  margin: 20px 0px;
 }
 .articles a {
   color: black;
@@ -156,7 +156,7 @@ main {
 }
 .articles ul {
   font-size: 1.7rem;
-  margin: 1vh 2vh;
+  margin: 20px 30px;
 }
 .articles rt {
   font-size: 1rem;
@@ -182,16 +182,16 @@ main {
 }
 .member {
   width: 45%;
-  padding: 2vh 0vh;
+  padding: 30px 0px;
 }
 .member p {
   font-size: 1.5rem;
 }
 .profile-pic {
   float: left;
-  width: 15vh;
+  width: 200px;
   height: auto;
-  margin: 1vh;
+  margin: 20px;
 }
 .social-link {
   text-decoration: none;
@@ -204,13 +204,13 @@ main {
   width: 400px;
   height: 220px;
   float: left;
-  padding-right: 2vh;
+  padding-right: 30px;
 }
 .latestVideoEmbed {
   width: 400px;
   height: 220px;
   float: left;
-  padding-right: 2vh;
+  padding-right: 30px;
 }
 .sidebar-latestVideoEmbed {
   width: 100%;
@@ -224,7 +224,7 @@ main {
 .recent-yt-videos .latestVideoEmbed {
   width: 650px;
   height: 420px;
-  padding: 2vh 0vh;
+  padding: 20px 0px;
 }
 
 .side-bar {
@@ -236,10 +236,10 @@ main {
 }
 .video-box {
   align-content: left;
-  padding: 2vh 0vh;
+  padding: 20px 0px;
 }
 .discord-embed {
-  padding: 2vh 0vh;
+  padding: 20px 0px;
 }
 
 footer {
@@ -295,4 +295,93 @@ footer a:hover {
 .footer-comment {
   grid-area: bottom-left;
   padding: 30px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 600px){
+  .logo-container {
+    display: none;
+  }
+  header {
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 1;
+    background: white;
+  }
+  nav {
+    grid-area: unset;
+    width: 100%;
+  }
+  .nav-links {
+    position: fixed;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    background: white;
+    z-index: 2;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1500px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
+    pointer-events: all;
+  }
+  .nav-link {
+    margin-left: 20vw;
+  }
+  .menu {
+    display: block;
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    z-index: 3;
+    transform: translate(-5%, -50%);
+  }
+  main {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    align-content: center;
+  }
+  .articles {
+    padding: 0px;
+    grid-row: 1 / 2;
+    width: 100%;
+  }
+  .side-bar {
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+  }
+  .side-bar .recent-yt {
+    padding: 10px 0px 0px 0px;
+  }
+  .side-bar::before {
+    content: "";
+    border-top: 2px solid black;
+    width: 95%;
+    height: 100%;
+    position: absolute;
+  }
+  .recent-yt-videos .latestVideoEmbed {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .socials .latestVideoEmbed,
+  .socials .vid-embed {
+    float: none;
+  }
+  footer {
+    width: 95%;
+  }
 }
