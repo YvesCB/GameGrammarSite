@@ -187,11 +187,15 @@ main {
 .member p {
   font-size: 1.5rem;
 }
-.profile-pic {
-  float: left;
+.picture-frame {
   width: 200px;
-  height: auto;
-  margin: 20px;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+  margin: 20px 20px 20px 0px;
+}
+.profile-pic {
+  object-fit: cover;
 }
 .social-link {
   text-decoration: none;
@@ -240,6 +244,9 @@ main {
 }
 .discord-embed {
   padding: 20px 0px;
+}
+.side-bar .patreon-widget{
+  margin: 20px 0px 20px 50%;
 }
 
 footer {
