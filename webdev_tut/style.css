@@ -70,6 +70,9 @@ header {
 nav {
   grid-area: navbar;
 }
+nav input {
+  display: none;
+}
 .nav-links {
   justify-content: space-between;
   list-style: none;
@@ -173,7 +176,6 @@ main {
 .articles .article-img:hover {
   transform: scale(1.05);
 }
-
 
 .about-section .members {
   display: flex;
@@ -309,9 +311,9 @@ footer a:hover {
     display: none;
   }
   header {
-    height: 80px;
+    height: 70px;
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: space-around;
@@ -322,7 +324,20 @@ footer a:hover {
   }
   nav {
     grid-area: unset;
+    display: flex;
     width: 100%;
+    position: fixed;
+  }
+  nav input {
+    display: flex;
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -100%);
+    width: 40px;
+    height: 40px;
+    z-index: 3;
+    opacity: 0;
   }
   .nav-links {
     position: fixed;
@@ -338,21 +353,25 @@ footer a:hover {
     transition: all 1s ease-out;
     pointer-events: none;
   }
-  .nav-links.open {
+  nav input:checked ~ .nav-links {
     clip-path: circle(1500px at 90% -10%);
     -webkit-clip-path: circle(1500px at 90% -10%);
     pointer-events: all;
   }
   .nav-link {
-    margin-left: 20vw;
+    margin-left: 50%;
   }
   .menu {
     display: block;
     position: fixed;
     right: 5%;
     top: 5%;
-    z-index: 3;
-    transform: translate(-5%, -50%);
+    z-index: 2;
+    transform: translate(-5%, -100%);
+  }
+  .menu svg {
+    width: 40px;
+    height: 40px;
   }
   main {
     width: 95%;
@@ -365,6 +384,9 @@ footer a:hover {
     padding: 0px;
     grid-row: 1 / 2;
     width: 100%;
+  }
+  .articles .article-img:hover {
+    transform: none;
   }
   .side-bar {
     width: 100%;
