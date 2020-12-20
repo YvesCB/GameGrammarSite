@@ -250,6 +250,12 @@ main {
 .side-bar .patreon-widget{
   margin: 20px 0px 20px 50%;
 }
+.side-bar #countdown,
+.side-bar #livelink {
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 1.8rem;
+}
 
 footer {
   width: 90%;
