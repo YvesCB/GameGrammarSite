@@ -1,7 +1,7 @@
 // Set the date we're counting down to
-var countDownDateSun = new Date("Jan 3, 2021 17:00:00").getTime();
-var countDownDateWed = new Date("Jan 6, 2021 18:00:00").getTime();
-var countDownDateFri = new Date("Jan 8, 2021 18:00:00").getTime();
+var countDownDateSun = new Date("Dec 19, 2021 17:00:00").getTime();
+var countDownDateWed = new Date("Dec 22, 2021 18:00:00").getTime();
+var countDownDateFri = new Date("Dec 24, 2021 18:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -10,9 +10,9 @@ var x = setInterval(function() {
     var now = new Date().getTime();
 
     // Find the distance between now and the count down date
-    var distanceSun = Math.abs((countDownDateSun - now) % (1000 * 60 * 60 * 24 * 7));
-    var distanceWed = Math.abs((countDownDateSun - now) % (1000 * 60 * 60 * 24 * 7));
-    var distanceFri = Math.abs((countDownDateSun - now) % (1000 * 60 * 60 * 24 * 7));
+    var distanceSun = (countDownDateSun - now) % (1000 * 60 * 60 * 24 * 7);
+    var distanceWed = (countDownDateWed - now) % (1000 * 60 * 60 * 24 * 7);
+    var distanceFri = (countDownDateFri - now) % (1000 * 60 * 60 * 24 * 7);
 
     var distance = Math.min(distanceSun, distanceWed, distanceFri);
 
@@ -42,7 +42,7 @@ var x = setInterval(function() {
         + minutestring + secondstring;
 
     // If the count down is finished, write some text
-    if ((nextday == "sun" && distance > (1000 * 60 * 60 * 44)) || (nextday == "wed" && distance > (1000 * 60 * 60 * 70)) || (nextday == "fri" && distance > (1000 * 60 * 60 * 45))) {
+    if ((nextday == "sun" && distance > (1000 * 60 * 60 * 44) ) || (nextday == "wed" && distance > (1000 * 60 * 60 * 70)) || (nextday == "fri" && distance > (1000 * 60 * 60 * 45))) {
         document.getElementById("countdown").innerHTML = "";
         document.getElementById("livelink").innerHTML = "Live now!";
     }

@@ -143,7 +143,7 @@ main {
   margin: 0px 0px 10px 0px;
 }
 .articles h5 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: normal;
   margin: 0px 0px 20px 0px;
 }
@@ -251,7 +251,7 @@ main {
   margin: 20px 0px 20px 50%;
 }
 .side-bar #countdown,
-.side-bar #livelink {
+.side-bar .livelinkpara {
   text-align: center;
   padding: 20px 0px;
   font-size: 1.8rem;
