@@ -145,7 +145,7 @@ main {
 .articles h5 {
   font-size: 2rem;
   font-weight: normal;
-  margin: 0px 0px 20px 0px;
+  margin: 10px 0px 20px 0px;
 }
 .articles p {
   font-size: 1.7rem;
@@ -163,6 +163,15 @@ main {
 }
 .articles rt {
   font-size: 1rem;
+}
+.articles .author-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.articles .author-date p {
+  font-size: 1.2rem;
+  margin: 0px 0px;
 }
 .img-box {
   width: 90%;
