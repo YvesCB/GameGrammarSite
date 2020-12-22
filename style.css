@@ -245,6 +245,7 @@ main {
 .side-bar {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  margin-top: 30px;
 }
 .side-bar h2 {
   font-size: 1.8rem;
