@@ -326,7 +326,7 @@ footer a:hover {
     display: none;
   }
   header {
-    height: 70px;
+    height: 90px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -347,7 +347,7 @@ footer a:hover {
     display: flex;
     position: fixed;
     right: 5%;
-    top: 5%;
+    top: 10%;
     transform: translate(-5%, -100%);
     width: 40px;
     height: 40px;
@@ -373,11 +373,18 @@ footer a:hover {
     -webkit-clip-path: circle(1500px at 90% -10%);
     pointer-events: all;
   }
+  .nav-link {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3rem;
+  }
   .menu {
     display: block;
     position: fixed;
     right: 5%;
-    top: 5%;
+    top: 10%;
     z-index: 2;
     transform: translate(-5%, -100%);
   }
@@ -390,7 +397,7 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
-    margin-top: 40px;
+    margin-top: 70px;
     align-content: center;
   }
   .articles {
