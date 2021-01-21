@@ -260,11 +260,22 @@ main {
 .side-bar .patreon-widget{
   margin: 20px 0px 20px 50%;
 }
+.side-bar .ctndown {
+  margin: 0px 0px 20px 0px;
+}
+.side-bar .discord {
+  padding: 20px 0px 0px 0px;
+}
 .side-bar #countdown,
-.side-bar .livelinkpara {
+.side-bar #live {
   text-align: center;
-  padding: 20px 0px;
   font-size: 1.8rem;
+}
+.side-bar a {
+  color: black;
+}
+.side-bar a:hover {
+  color: rgb(83, 83, 83);
 }
 
 footer {
