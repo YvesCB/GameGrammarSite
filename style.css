@@ -151,6 +151,13 @@ main {
   font-size: 1.7rem;
   margin: 20px 0px;
 }
+.articles .wrap_left{
+  float: left;
+  margin-right: 20px;
+}
+.articles img {
+  width: 45%;
+}
 .articles a {
   color: black;
 }
